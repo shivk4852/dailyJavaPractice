@@ -14,6 +14,21 @@ public class LeapYearCalculator {
 		} else {
 			System.out.println("Not a leap year");
 		}
+		
+		//via switch case
+		
+		boolean isLeap= (year % 4 == 0 && year % 100 != 0 || year % 400 == 0);
+		
+		int flag= isLeap?1:0;
+		switch(flag)
+		{
+		
+		case 1: System.out.println(" is a leap year"); break;
+		
+		default : System.out.println("Not a leap year");
+		
+		}
+		
 
 	}
 
